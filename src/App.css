@@ -3,10 +3,12 @@
 :root {
   --primary-white: #fff;
   --primary-yellow: #ee9b00;
+  --primary-grey: #e0e1dd;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--primary-grey);
 }
 
 /* Nav Section */
@@ -19,7 +21,7 @@ body {
 
 nav a.nav-link {
   font-weight: 200;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -38,11 +40,26 @@ nav ul li {
   color: var(--primary-yellow) !important;
 }
 
-/* Error Page */
-.error-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: var(--primary-yellow) !important;
+/* Homepage Section */
+.profile {
+  border-radius: 100%;
+  width: 15rem;
+}
+
+/* Projects Section */
+.card {
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.card a:hover {
+  z-index: 1;
+  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transition: transform 0.1s ease;
+}
+
+/* Footer Section */
+.trademark {
+  color: var(--primary-white) !important;
 }

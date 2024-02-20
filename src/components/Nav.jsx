@@ -1,13 +1,14 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container">
         <a className="navbar-brand" href="/">
-          Travis Fowlston's Portfolio
+          <FontAwesomeIcon icon={faCode} style={{ color: "white" }} /> Travis
+          Fowlston's Portfolio
         </a>
         <button
           className="navbar-toggler"

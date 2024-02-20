@@ -13,11 +13,13 @@ export default function ErrorPage() {
             alt="Page Not Found"
             className="img-fluid"
           />
-          <h1 className="mt-4">404 - Page Not Found</h1>
+          <h1 className="mt-4">Uh oh, something went wrong!</h1>
           <p className="lead mt-4">
             <i>{error.statusText || error.message}</i>
           </p>
-          <a class="btn btn-primary" href="/" role="button">Go Home!</a>
+          <a class="btn btn-primary" href="/" role="button">
+            Go Home!
+          </a>
         </div>
       </div>
     </div>
