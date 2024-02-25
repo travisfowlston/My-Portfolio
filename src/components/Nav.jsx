@@ -1,15 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faCode } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function Nav({ currentPage }) {
+  const pages = ["Projects", "Resume", "Contact"];
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link to="/" className="navbar-brand">
           <FontAwesomeIcon icon={faCode} style={{ color: "white" }} /> Travis
           Fowlston's Portfolio
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,26 +25,16 @@ export default function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                About Me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/projects">
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/resume">
-                Resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/contact">
-                Contact Me
-              </a>
-            </li>
+            {pages.map((page, index) => (
+              <li className="nav-item" key={index}>
+                <Link
+                  to={`/${page.toLowerCase().replace(" ", "-")}`}
+                  className={`nav-link ${currentPage === page ? "active" : ""}`}
+                >
+                  {page}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

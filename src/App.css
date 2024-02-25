@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
+/* General styles */
 :root {
   --primary-white: #fff;
   --primary-yellow: #ee9b00;
   --primary-grey: #e0e1dd;
+  --primary-dark: #212529;
 }
 
 body {
@@ -11,9 +12,46 @@ body {
   background-color: var(--primary-grey);
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+li {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 /* Nav Section */
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 1.55rem;
   font-weight: 700;
   padding: 1.5rem !important;
   color: var(--primary-yellow) !important;
@@ -21,7 +59,7 @@ body {
 
 nav a.nav-link {
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -37,29 +75,67 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
+  transform: scale(1.05);
+  transition: transform 0.05s ease;
   color: var(--primary-yellow) !important;
 }
 
 /* Homepage Section */
 .profile {
-  border-radius: 100%;
-  width: 15rem;
+  border-color: #ee9b00;
+  border-radius: 10%;
+  width: 10rem;
 }
 
 /* Projects Section */
 .card {
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   margin: 1rem;
   box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
 }
+
 .card a:hover {
   z-index: 1;
   box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
-  transition: transform 0.1s ease;
+  transition: transform 0.05s ease;
+  color: var(--primary-yellow);
+}
+
+/* Resume Section */
+.skills {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+/* Contact Section */
+.btn:hover {
+  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transition: transform 0.05s ease;
+  color: var(--primary-yellow) !important;
 }
 
 /* Footer Section */
 .trademark {
-  color: var(--primary-white) !important;
+  color: var(--primary-dark) !important;
+  font-size: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.icon:hover {
+  transform: scale(1.25);
+  transition: transform 0.05s ease;
+  color: var(--primary-yellow) !important;
 }

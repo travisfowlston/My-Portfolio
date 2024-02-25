@@ -5,7 +5,7 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div className="container">
+    <section className="container">
       <div className="row justify-content-center mt-5 p-4">
         <div className="col-md-6 text-center">
           <img
@@ -22,6 +22,6 @@ export default function ErrorPage() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,18 +1,19 @@
-// Bringing in the required import from 'react-router-dom'
-import { Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import MainPage from "./pages/MainPage";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 
-function App() {
-  // The Outlet component will conditionally swap between the different pages according to the URL
+export default function App() {
+  const currentPage = useLocation().pathname;
+
   return (
-    <>
-      <Nav />
-      <Outlet />
+    <div>
+      <Nav currentPage={currentPage} />
+      <main>
+        <MainPage currentPage={currentPage} />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
-
-export default App;
