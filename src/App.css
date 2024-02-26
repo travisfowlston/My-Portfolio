@@ -82,9 +82,9 @@ nav ul li {
 
 /* Homepage Section */
 .profile {
-  border-color: #ee9b00;
-  border-radius: 10%;
-  width: 10rem;
+  border-radius: 100%;
+  width: 12rem;
+  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Projects Section */
@@ -92,14 +92,13 @@ nav ul li {
   border-radius: 0.3rem;
   margin: 1rem;
   box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.card a:hover {
-  z-index: 1;
-  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.5);
+.card:hover {
   transform: scale(1.05);
-  transition: transform 0.05s ease;
-  color: var(--primary-yellow);
+  background-color: var(--primary-yellow);
+  color: var(--primary-white);
 }
 
 /* Resume Section */

@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile-adjusted.jpg";
 
 export default function HomePage() {
   return (
@@ -7,7 +7,11 @@ export default function HomePage() {
         <h1>Welcome to my portfolio!</h1>
       </div>
       <div className="mt-4 mb-4">
-        <img src={profilePic} alt="Profile Picture" className="profile" />
+        <img
+          src={profilePic}
+          alt="Profile Picture"
+          className="profile border border-dark border-3"
+        />
       </div>
       <div className="mt-4 mb-4">
         <h2>About Me:</h2>

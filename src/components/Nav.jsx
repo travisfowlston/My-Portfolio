@@ -6,7 +6,7 @@ export default function Nav({ currentPage }) {
   const pages = ["Projects", "Resume", "Contact"];
 
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
+    <nav className="navbar navbar-expand-lg bg-dark z-depth-4">
       <div className="container">
         <Link to="/" className="navbar-brand">
           <FontAwesomeIcon icon={faCode} style={{ color: "white" }} /> Travis

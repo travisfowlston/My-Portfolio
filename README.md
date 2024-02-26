@@ -1,8 +1,23 @@
-# React + Vite
+# Travis Fowlston's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+The Module 20 Challenge objective was to create a portfolio, using your new React skills to help set you apart from other developers whose portfolios don’t use the latest technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deployment Screenshot
+
+![deployment-screenshot](./src/assets/my-portfolio.jpg)
+
+[Deployment Link]()
+
+## Comments
+
+- Application uses React to render content.
+- Application uses mobile-first design.
+- Application has a single Header component that appears on multiple pages, with a Navigation component within it that uses react-router-dom to render About Me, Portfolio, Contact, and Resume sections.
+- Application has a single Project component that’s used multiple times in the Portfolio section.
+- Application has a single Footer component that appears on multiple pages.
+
+## Credits
+
+- Project was completed by Travis Fowlston.

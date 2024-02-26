@@ -6,12 +6,12 @@ export default function AboutPage() {
   return (
     <div className="container">
       <div className="mt-4 mb-4">
-        <a href={resume}>
+        <a href={resume} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faFileArrowDown}
             size="2x"
             style={{ color: "#212529" }}
-            className="icon z-2"
+            className="icon"
             bounce
           />
         </a>
