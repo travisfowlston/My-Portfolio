@@ -1,4 +1,4 @@
-import resume from "../assets/Travis Fowlston Data Analyst.pdf";
+import resume from "../assets/Travis Fowlston Full Stack Web Developer.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 

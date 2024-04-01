@@ -1,15 +1,15 @@
 import expenseTracker from "../assets/expense-tracker.jpg";
 import stockMarketDashboard from "../assets/stock-market-dashboard.jpg";
-import socialMediaAPI from "../assets/social-media.jpg";
+import eftBallistics from "../assets/eft-ballistics.png";
 import codeQuiz from "../assets/code-quiz.jpg";
 import noteTaker from "../assets/note-taker.jpg";
 import workdayScheduler from "../assets/workday-scheduler.jpg";
 
 const projects = [
   {
-    title: "Social Media API",
-    image: socialMediaAPI,
-    link: "https://github.com/travisfowlston/Social-Network-API",
+    title: "EFT Ballistics",
+    image: eftBallistics,
+    link: "https://eft-ballistics.onrender.com/",
   },
   {
     title: "Expense Tracker Project",
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       <p className="mt-1">Here are some of my projects:</p>
       <div className="row">
         {projects.map((project, index) => (
-          <div className="col" key={index}>
+          <div className="col mb-3" key={index}>
             <a
               href={project.link}
               target="_blank"
